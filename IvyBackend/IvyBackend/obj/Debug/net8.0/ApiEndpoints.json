@@ -32,9 +32,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "IvyBackend.Controllers.HomeController",
+    "ContainingType": "IvyBackend.Controllers.BudgetController",
     "Method": "AddBudget",
-    "RelativePath": "api/Home/AddBudget",
+    "RelativePath": "api/Budget/AddBudget",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -48,9 +48,30 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "IvyBackend.Controllers.HomeController",
+    "ContainingType": "IvyBackend.Controllers.BudgetController",
+    "Method": "GetBudgetById",
+    "RelativePath": "api/Budget/GetBudgetById/{user_id}/{month}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user_id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "month",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IvyBackend.Controllers.ExpenseController",
     "Method": "AddExpense",
-    "RelativePath": "api/Home/AddExpense",
+    "RelativePath": "api/Expense/AddExpense",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -64,9 +85,113 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "IvyBackend.Controllers.ExpenseController",
+    "Method": "FullExpenseOfAUser",
+    "RelativePath": "api/Expense/FullExpenseOfAUser/{user_id}/{month}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user_id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "month",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IvyBackend.Controllers.ExpenseController",
+    "Method": "GetExpenseByMonth",
+    "RelativePath": "api/Expense/GetExpenseByMonth/{user_id}/{month}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user_id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "month",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "IvyBackend.Controllers.HomeController",
+    "Method": "FindByName",
+    "RelativePath": "api/Home/FindByName/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IvyBackend.Controllers.HomeController",
+    "Method": "GetAccount",
+    "RelativePath": "api/Home/GetAccount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IvyBackend.Controllers.HomeController",
+    "Method": "GetCategory",
+    "RelativePath": "api/Home/GetCategory",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IvyBackend.Controllers.HomeController",
+    "Method": "GetCurrency",
+    "RelativePath": "api/Home/GetCurrency",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IvyBackend.Controllers.HomeController",
+    "Method": "GetUserCurrency",
+    "RelativePath": "api/Home/GetUserCurrency/{user_id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user_id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IvyBackend.Controllers.IncomeController",
     "Method": "AddIncome",
-    "RelativePath": "api/Home/AddIncome",
+    "RelativePath": "api/Income/AddIncome",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -80,9 +205,51 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "IvyBackend.Controllers.HomeController",
+    "ContainingType": "IvyBackend.Controllers.IncomeController",
+    "Method": "FullIncomeOfAUser",
+    "RelativePath": "api/Income/FullIncomeOfAUser/{user_id}/{month}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user_id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "month",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IvyBackend.Controllers.IncomeController",
+    "Method": "GetIncomeByMonth",
+    "RelativePath": "api/Income/GetIncomeByMonth/{user_id}/{month}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user_id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "month",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IvyBackend.Controllers.ReportController",
     "Method": "ApplyFilter",
-    "RelativePath": "api/Home/ApplyFilter/ApplyFilter",
+    "RelativePath": "api/Report/ApplyFilter/ApplyFilter",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -116,194 +283,6 @@
         "Name": "amount",
         "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "IvyBackend.Controllers.HomeController",
-    "Method": "FindByName",
-    "RelativePath": "api/Home/FindByName/{name}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "name",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "IvyBackend.Controllers.HomeController",
-    "Method": "FullExpenseOfAUser",
-    "RelativePath": "api/Home/FullExpenseOfAUser/{user_id}/{month}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "user_id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "month",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "IvyBackend.Controllers.HomeController",
-    "Method": "FullIncomeOfAUser",
-    "RelativePath": "api/Home/FullIncomeOfAUser/{user_id}/{month}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "user_id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "month",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "IvyBackend.Controllers.HomeController",
-    "Method": "GetAccount",
-    "RelativePath": "api/Home/GetAccount",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "IvyBackend.Controllers.HomeController",
-    "Method": "GetBalance",
-    "RelativePath": "api/Home/GetBalance/{user_id}/{month}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "user_id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "month",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "IvyBackend.Controllers.HomeController",
-    "Method": "GetBudgetById",
-    "RelativePath": "api/Home/GetBudgetById/{user_id}/{month}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "user_id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "month",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "IvyBackend.Controllers.HomeController",
-    "Method": "GetCategory",
-    "RelativePath": "api/Home/GetCategory",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "IvyBackend.Controllers.HomeController",
-    "Method": "GetCurrency",
-    "RelativePath": "api/Home/GetCurrency",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "IvyBackend.Controllers.HomeController",
-    "Method": "GetExpenseByMonth",
-    "RelativePath": "api/Home/GetExpenseByMonth/{user_id}/{month}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "user_id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "month",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "IvyBackend.Controllers.HomeController",
-    "Method": "GetIncomeByMonth",
-    "RelativePath": "api/Home/GetIncomeByMonth/{user_id}/{month}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "user_id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "month",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "IvyBackend.Controllers.HomeController",
-    "Method": "GetUserCurrency",
-    "RelativePath": "api/Home/GetUserCurrency/{user_id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "user_id",
-        "Type": "System.Int32",
-        "IsRequired": true
       }
     ],
     "ReturnTypes": []
