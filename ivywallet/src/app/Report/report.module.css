@@ -1,0 +1,197 @@
+
+.container{
+      display: flex;
+      flex-direction: row;
+      height: 900px;
+      width: 100%;
+}
+
+
+
+.filter{
+      flex: 2;
+      border-right: 1px solid #ccc;
+      padding: 30px;
+}
+.report{
+      flex: 5;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+}
+.bytype{
+      margin-bottom: 40px;
+}
+.section_title{
+      color: #ff4d6d;
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 20px;
+}
+
+.radio_group{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+}
+.radio_option{
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      user-select: none;
+}
+.radio_option input[type="radio"] {
+            appearance: none;
+            width: 24px;
+            height: 24px;
+            border: 2px solid #666;
+            border-radius: 50%;
+            margin-right: 12px;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+.radio_option input[type="radio"]:checked {
+            border-color: #ff4d6d;
+        }
+.radio_option input[type="radio"]:checked::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 12px;
+            height: 12px;
+            background-color: #ff4d6d;
+            border-radius: 50%;
+        }
+
+        .radio_option label {
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+.monthSelectorWrapper {
+  position: relative;
+}
+.account{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 20px auto;
+  font-family: "Poppins", sans-serif;
+}
+.category{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 20px auto;
+  font-family: "Poppins", sans-serif;
+}
+.submit{
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 20px auto;
+  font-family: "Poppins", sans-serif;
+}
+.submit button{
+  background-color: #ff4d6d;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}     
+
+.cards{
+   width: 100%;
+   padding: 30px;
+   display: flex;
+   flex-direction: column;
+}
+
+.card{
+  width: 100%;
+  background-color: #de4747;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 20px;
+} 
+.card_title{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.report h3{
+   padding-top: 50px;
+   font-size: 30;
+   color: rgb(239, 26, 26);
+}
+
+.monthButton {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  border: 2px solid #ceb8b8;
+  border-radius: 50px;
+  padding: 6px 14px;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.monthButton:hover {
+  border-color: #555;
+}
+
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 42px;
+  background: #1a1a1a;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  z-index: 10;
+  overflow: hidden;
+  width: 160px;
+}
+
+.dropdownItem {
+  padding: 10px 16px;
+  color: #e5e5e5;
+  cursor: pointer;
+}
+
+.dropdownItem:hover {
+  background-color: #2a2a2a;
+}
+
+.dropdown_select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #2c2727;
+  border: 2px solid #d1d5db;
+  border-radius: 20px;
+  width: 80%;
+  padding: 12px 16px;
+  font-size: 15px;
+  color: #eee9ee;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  margin-bottom: 10px;
+}

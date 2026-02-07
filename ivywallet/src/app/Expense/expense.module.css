@@ -1,0 +1,118 @@
+
+
+.pie_chart {
+  width: 600px;
+  height: 600px;
+  margin: 0px auto;
+  padding-top: 30px;
+}
+.card_wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+}
+.cards {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 600px;
+  margin: 0px auto;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 15px;
+  gap: 40px;
+}
+.upper{
+  padding-top: 30px;
+}
+
+.upper div{
+  font-size: 70px;
+}
+
+.h{
+  height: 40px;
+}
+
+.monthSelectorWrapper {
+  position: relative;
+}
+
+.monthButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 2px solid #ceb8b8;
+  border-radius: 50px;
+  padding: 6px 14px;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.monthButton:hover {
+  border-color: #555;
+}
+
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 42px;
+  background: #1a1a1a;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  z-index: 10;
+  overflow: hidden;
+  width: 160px;
+}
+.content{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.dropdownItem {
+  padding: 10px 16px;
+  color: #e5e5e5;
+  cursor: pointer;
+}
+
+.dropdownItem:hover {
+  background-color: #2a2a2a;
+}
+
+.img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.img img{
+  width: 100%;
+  height: 100%;
+}
+.card_title span{
+    font-size: 20px;
+}
+.card_title p{
+   font-size: 25px;
+}
+.card_title{
+  width: 100%;
+  gap: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}

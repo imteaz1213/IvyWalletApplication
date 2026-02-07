@@ -1,0 +1,4 @@
+wwwroot\images\gift.png
+wwwroot\images\glass.png
+wwwroot\images\shopping-cart.png
+wwwroot\images\transport.png

@@ -1,0 +1,161 @@
+
+.nav{
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      width: 100%;
+      justify-content: space-between;
+}
+
+.container {
+  width: 100%;
+  padding: 24px;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.budgets {
+  width: 100%; 
+  display: flex;
+  gap: 24px;
+}
+
+
+.monthSelectorWrapper {
+  position: relative;
+}
+
+.monthButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 2px solid #ceb8b8;
+  border-radius: 50px;
+  padding: 6px 14px;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.monthButton:hover {
+  border-color: #555;
+}
+
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 42px;
+  background: #1a1a1a;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  z-index: 10;
+  overflow: hidden;
+  width: 160px;
+}
+
+.dropdownItem {
+  padding: 10px 16px;
+  color: #e5e5e5;
+  cursor: pointer;
+}
+
+
+.budget {
+  display: flex;
+  width: 1350px;
+  padding: 0 10px;
+  flex-direction: column;
+  margin: 10px auto;
+  gap: 18px;
+}
+
+.card {
+  background-color: #655b5b;
+  border-radius: 20px;
+  padding: 16px;
+  box-shadow: 0 0 10px rgba(191, 37, 37, 0.05);
+}
+
+/* ===== Card Header ===== */
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.cardHeader h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.sub {
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-top: 4px;
+}
+
+.amount {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+/* ===== Status Section ===== */
+.status {
+  border-radius: 16px;
+  padding: 12px 14px;
+  margin-top: 10px;
+  color: #fff;
+  transition: background 0.3s ease;
+}
+
+.statusTitle {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.status h4 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.status h4 span {
+  font-size: 0.9rem;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.ratio {
+  font-size: 0.8rem;
+  opacity: 0.9;
+  margin-top: 3px;
+}
+
+/* ===== Progress Bar ===== */
+.progressWrapper {
+  position: relative;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  height: 8px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.progressBar {
+  height: 100%;
+  border-radius: inherit;
+  transition: width 0.4s ease;
+}
+
+/* ===== Responsive Design ===== */
+@media (min-width: 700px) {
+  .budgets {
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
