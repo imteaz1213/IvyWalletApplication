@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IvyBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b2da367d37e267748f261e08a63322138c5f10f8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+16ef840babf796665358f5f0405a9b89d7df8251")]
 [assembly: System.Reflection.AssemblyProductAttribute("IvyBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IvyBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
